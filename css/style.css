@@ -490,3 +490,8 @@ img{
     }
 
 }
+@media(max-width:500px){
+   textarea{
+    max-width: 120%;
+   }
+}
