@@ -1,0 +1,54 @@
+.footer{
+    padding: 2rem 4rem;
+    padding-bottom: 5rem;
+    background-color: $colorpink;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Junge', serif;
+
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .medios-pago {
+
+        @include tablet {
+            padding-bottom: 3rem;
+        }
+
+        h4{
+         font-size: 1rem;
+        }
+        .pagos{
+            height: 1rem;
+            width: 3rem;
+            margin-bottom: 1.5rem;
+        }
+        .envio{
+            height: 2rem;
+            width: 4rem;
+        }
+    }
+
+    .contactos{
+
+        h4{
+            font-size: 1rem;
+        }
+
+        h5{
+            font-size: 0.7rem;
+        }
+
+        .redes{
+            margin-top: 4rem;
+        }
+        
+    }
+
+    .iconos{
+        color: #432818;
+        margin-left: 2rem;
+    }
+}

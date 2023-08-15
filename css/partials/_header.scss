@@ -1,0 +1,78 @@
+.encabezado{
+    
+    .cta{
+        background-color: $colorpink;
+        text-align: center;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    
+        h2{
+            margin-bottom: 0%;
+            font-size: 14px;
+        }
+    }
+    
+    .navbar{
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 10% 65% 20%;
+        border-bottom: 1px solid #bdbdbd;
+        @include desktop{
+            display: inline;
+            text-align: center;   
+        }
+
+        .logo{
+            width: 6rem;
+            padding-left: 1rem;
+            @include mobile{
+                padding-left: 0;
+            }
+        }
+        
+        .listas{
+            display: flex;
+            list-style-type: none;
+            font-size: 13px;
+            margin-bottom: 0;
+            padding-left: 0;
+            gap: 2rem;
+            
+            @include desktop{
+                justify-content: center;
+            }
+            @include mobile{
+                display: inline;
+                text-align: center;
+                max-width: 100%;
+            }
+
+            .links{
+                color: black;
+                text-decoration: none;
+                font-family: $fuentelato;
+            }
+        }
+
+        .navicons{
+            font-size: 13px;
+            display: flex;
+            gap: 1rem;
+            @include desktop{
+                padding-top: 1rem;
+                justify-content: center
+            }
+            @include tablet{
+                display: none;
+            }
+            @include mobile{
+                display: none
+            }
+            }
+            i{
+                font-style: normal;
+                font-family: $fuentelato;
+            }
+        }
+    }
