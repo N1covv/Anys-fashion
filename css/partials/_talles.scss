@@ -11,7 +11,40 @@
 }
 
 .imagen-talle{
+    position: relative;
     padding-left: 5rem;
     padding-right: 5rem;
     width: 100%;
+
+    .mobile-talle{
+        display: none;
+        width: 100%;
+    }
+    .mobile-talle2{
+        display: none;
+        width: 100%;
+    }
+    .desktop-talle{
+        display: block;
+        width: 100%;
+    }
+    
+
+    @include tablet{
+        padding: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    @include mobile{
+        .desktop-talle{
+            display: none;
+        }
+        .mobile-talle{
+            display: block;
+            width: 100%;
+            padding: 0;
+        }
+    }
 }

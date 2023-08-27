@@ -531,7 +531,38 @@ img {
 }
 
 .imagen-talle {
+  position: relative;
   padding-left: 5rem;
   padding-right: 5rem;
   width: 100%;
+}
+.imagen-talle .mobile-talle {
+  display: none;
+  width: 100%;
+}
+.imagen-talle .mobile-talle2 {
+  display: none;
+  width: 100%;
+}
+.imagen-talle .desktop-talle {
+  display: block;
+  width: 100%;
+}
+@media screen and (max-width: 750px) {
+  .imagen-talle {
+    padding: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .imagen-talle .desktop-talle {
+    display: none;
+  }
+  .imagen-talle .mobile-talle {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
 }/*# sourceMappingURL=estilos.css.map */
